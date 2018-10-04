@@ -1,0 +1,98 @@
+http://www.facom.ufu.br/~marcelo/PL/tutorial%20de%20prolog.pdf
+
+Instalacao
+	sudo add-apt-repository ppa:swi-prolog/stable
+	sudo apt-get update
+	sudo apt-get install swi-prolog
+
+
+Usando swipl
+
+	Iniciar - swipl
+
+Comandos uteis
+	Carregar programa - 
+		consult(programa).
+		[programa].
+		swipl programa.pl
+	
+	Ver conteudo de modulo carregado - listing(programa).
+	Ver historico de chamadas - trace.
+	Sair do modo trace - notrace.
+	Trace grafico - guitrace.
+	Parar prolog - halt.
+	
+Exemplos simples
+
+	Fatorial
+		factorial(0, 1).
+
+		factorial(A, B) :- 
+			A > 0,
+			C is A-1,
+			factorial(C,D),
+			B is A*D.
+			
+Introducao
+
+	Areas de aplicacao de prolog
+		Problemas de IA, Provadores de Teoremas, Sistemas Especialistas, Pesquisa Operacioinal, Construcao de Compiladores, etc.
+
+	O conceito de predicado reflete o espirito do Prolog
+
+	Passos para programacao em prolog
+		1 - Escreva/Edite o programa em um editor de texto.
+		2 - Salve o programa editado.
+		3 - Leia o programa com o prolog.
+		4 - Se o prolog relatar erros, volte ao passo 1
+		5 - Teste o programa, se a saida nao for a esperada, volte ao passo 1
+		
+	Exemplo
+		"Alexandra, Barbara, e Rosa tem roupas em azul, verde, lilás, vermelho e amarelo. Nenhuma delas veste amarelo com vermelho. Cada uma delas veste roupas com duas cores, isto é, roupas tipo blusa e saia. Alexandra está vestindo o azul. Barbara está vestindo o amarelo mas não o verde. Rosa veste o verde mas não se veste nem de azul e nem lilás. Uma delas está de vermelho. Uma das cores é usada tanto por Barbara como por Rosa. Alexandra e Barbara tem 04 cores entre elas."				
+		
+	Operadores
+		if 			- :-
+		and 		- ,
+		or 			- ;
+		not equal 	- \==
+		not			- \+
+		\n			- nl
+		
+	
+Questoes, fatos e regras
+
+	Variaveis: letras maiusculas
+
+	Predicatos: sao os nomes dos fatos, e devem possuir letra minuscula.
+
+	Para aplicar o prolog e necessario ter conhecimento sobre fatos e regras.
+	
+	Questões: perguntas feitas a base de conhecimento. 
+	
+	Fatos: verdades incondicionais, encontrados na base de conhecimento. (casos base)
+	
+	Regras: precisam de uma prova lógica
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+	
